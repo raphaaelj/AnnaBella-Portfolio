@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('images/fundo.png');
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+.top-nav {
+    height: 10vh;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bbb883;
+}
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #5b6d99;
+    font-weight: 800;
+    padding: 0 10px;
+    transition-duration: 1s;
+}
+
+.top-nav a:hover {
+    color: whitesmoke;
+}
+
+.sec-about {
+    margin: 0px 20px 0px;
+    padding-bottom: 50px;
+}
+
+.content {
+    background-color: #E8E8D9;
+    border-radius: 0 0 5% 5%;
+}
+
+.content .img {
+    display: flex;
+    margin: 30px auto;
+    border: 10px solid #bbb883;
+}
+
+.content h1 {
+    color: #757239;
+    padding: 20px 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media #gmail, .social-media #whatsapp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.social-media .social-img {
+    margin-right: 2vw;
+}
+
+footer {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    height: 10vh;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 890px) {
+    .content .img {
+    max-width: 99%;
+}
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .social-media #gmail, .social-media #whatsapp {
+        flex-direction: column;
+    }
+
+    .top-nav {
+        height: fit-content;
+    }
+
+    .top-nav ul {
+        max-width: 50%;
+        flex-direction: column;
+    }
+}
